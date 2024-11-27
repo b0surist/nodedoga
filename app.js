@@ -1,10 +1,10 @@
 import express from "express"
-import Route from "./routes/index.js"
+import Routes from "./routes/index.js"
 
 const app = express()
 
 const PORT = 3000;
-app.listen(PORT, ()=> console.log("Hi there"))
+app.listen(PORT, () => console.log("Hi there"))
 
 
 app.use('/nodejs', (res, req) =>{
@@ -19,7 +19,7 @@ app.use('/greeting', (res, req) =>{
     req.send("Hello Surányi István")
 })
 
-app.use('/', Route)
+app.use('/', Routes)
 
 
 
