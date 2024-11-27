@@ -21,18 +21,10 @@ app.use('/greeting', (res, req) =>{
 
 app.use('/', Routes)
 
-
-
-const users = [
-    {id:"1", name:"John Doe"},
-    {id:"2", name:"Jane Smith"},
-    {id:"3", name:"Sam Johnson"}
-]
-
 const statuszkod = 0;
 
 app.use('/api/users', (res, req) =>{
-   if(req.send(console.log(users) != null)){
+   if(req.send(console.log('/api/users') != null)){
         statuszkod += 200;
    }
    return statuszkod
